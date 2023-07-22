@@ -1,5 +1,7 @@
 <h1>Angular App</h1>
-<p>{{childMessage}}</p>
-<app-navbar></app-navbar>
-<app-post [parentMessage]='parentMessage' (messageEvent) = 'receivedMessage($event)'></app-post>
-<p>{{receivedMsgFromChild}}</p>
+
+<!-- String Interpolation -->
+<p>{{message}}</p>
+
+<!-- Property Binding -->
+<img [src]="imgUrl">

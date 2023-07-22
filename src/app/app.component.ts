@@ -1,28 +1,11 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { PostComponent } from './post/post.component';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit{
-  title = 'AngularBasics';
-  parentMessage:string = 'Message from app component to post component';
-  @ViewChild(PostComponent) childComp;
-  childMessage : string;
-  receivedMsgFromChild:string;
-
-  constructor(){
-    console.log(this.childComp);
-  }
-
-  ngAfterViewInit(): void {
-    console.log(this.childComp);
-    this.childMessage = this.childComp.childMessage;
-  }
-
-  receivedMessage($event){
-    this.receivedMsgFromChild = $event;
-  }
+export class AppComponent {
+  message:string = 'Hello World!!!';
+  imgUrl = 'https://media.cntraveler.com/photos/58de89946c3567139f9b6cca/1:1/w_3633,h_3633,c_limit/GettyImages-468366251.jpg';
 }
