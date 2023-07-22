@@ -1,12 +1,2 @@
-<!-- Class Binding -->
-<h1 [class.text-red] = "bool">Angular App</h1>
-
-<!-- Style Binding -->
-<h1 [style.color] = "bool ? 'red' : 'blue'"> Style Binding</h1>
-
-<!-- Event Binding -->
-<button (click) = "onButtonClick()">Click Me</button>
-
-<br/>
-<!-- Event Filtering -->
-<input type="text" (keyup.Enter) = "onKeyUp()" >
+<!-- Template Variable -->
+<input type="text" (keyup.Enter) = "onKeyUp(enteredText.value)" #enteredText>
