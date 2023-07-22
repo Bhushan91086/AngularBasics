@@ -7,12 +7,13 @@ import { Component} from '@angular/core';
 })
 export class AppComponent {
   bool:boolean = true;
+  enteredText:string;
 
   onButtonClick(){
     console.log("Button click event execute...");
   }
 
-  onKeyUp(enteredText){
-    console.log(enteredText);
+  onKeyUp(){
+    console.log(this.enteredText);
   }
 }

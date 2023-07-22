@@ -1,2 +1,2 @@
-<!-- Template Variable -->
-<input type="text" (keyup.Enter) = "onKeyUp(enteredText.value)" #enteredText>
+<!-- Two way data binding -->
+<input type="text" [(ngModel)] = "enteredText" (keyup.Enter) = "onKeyUp()">
