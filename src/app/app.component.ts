@@ -6,6 +6,13 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  message:string = 'Hello World!!!';
-  imgUrl = 'https://media.cntraveler.com/photos/58de89946c3567139f9b6cca/1:1/w_3633,h_3633,c_limit/GettyImages-468366251.jpg';
+  bool:boolean = true;
+
+  onButtonClick(){
+    console.log("Button click event execute...");
+  }
+
+  onKeyUp(){
+    console.log("Key up event fired...");
+  }
 }
