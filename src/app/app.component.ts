@@ -6,9 +6,14 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- postTitle : string;
- postDetails : string;
- imgUrl : string;
- postUrl : string;
- addBackground : boolean
+  cities : Array<string> = ['Pune', 'Kolhapur', 'Tokyo', 'Paris', 'Mumbai'];
+
+  countryObj : Array<any> = [
+    {id:1, Name:'India'},
+    {id:2, Name:'Japan'},
+    {id:3, Name:'France'},
+    {id:4, Name:'USA'},
+    {id:5, Name:'Norway'}
+  ];
+
 }
