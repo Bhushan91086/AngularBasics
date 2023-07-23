@@ -6,14 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  bool:boolean = true;
-  enteredText:string;
-
-  onButtonClick(){
-    console.log("Button click event execute...");
-  }
-
-  onKeyUp(){
-    console.log(this.enteredText);
-  }
+ postTitle : string;
+ postDetails : string;
+ imgUrl : string;
+ postUrl : string;
+ addBackground : boolean
 }
